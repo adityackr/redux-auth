@@ -1,29 +1,52 @@
 .auth {
-  margin: 5rem auto;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
-  width: 25rem;
-  border-radius: 8px;
-  padding: 1rem;
-  text-align: center;
-  background-color: #f4f0fa;
+    margin: 5rem auto;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+    width: 25rem;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    background-color: #f4f0fa;
 }
 
 .control {
-  margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .control label {
-  display: block;
-  color: #616161;
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
+    display: block;
+    color: #616161;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
 }
 
 .control input {
-  display: block;
-  width: 20rem;
-  margin: auto;
-  border-radius: 4px;
-  padding: 0.25rem;
-  border: 1px solid #ccc;
+    display: block;
+    width: 20rem;
+    margin: auto;
+    border-radius: 4px;
+    padding: 0.25rem;
+    border: 1px solid #ccc;
+}
+
+button:disabled,
+button:disabled:hover,
+button:disabled:active {
+    background-color: #ccc;
+    color: #292929;
+    border-color: #ccc;
+    cursor: not-allowed;
+}
+
+.invalid input {
+    border: 1px solid #b40e0e;
+    background-color: #fddddd;
+}
+
+.invalid input:focus {
+    border-color: #ff8800;
+    background-color: #fbe8d2;
+}
+
+.error {
+    color: #b40e0e;
 }
